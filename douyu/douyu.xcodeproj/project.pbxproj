@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		491F033A1E1CE0590050E933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F03391E1CE0590050E933 /* AppDelegate.swift */; };
-		491F033C1E1CE0590050E933 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F033B1E1CE0590050E933 /* ViewController.swift */; };
 		491F033F1E1CE0590050E933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491F033D1E1CE0590050E933 /* Main.storyboard */; };
 		491F03411E1CE0590050E933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491F03401E1CE0590050E933 /* Assets.xcassets */; };
 		491F03441E1CE0590050E933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491F03421E1CE0590050E933 /* LaunchScreen.storyboard */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		491F03361E1CE0580050E933 /* douyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		491F03391E1CE0590050E933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		491F033B1E1CE0590050E933 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		491F033E1E1CE0590050E933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		491F03401E1CE0590050E933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		491F03431E1CE0590050E933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,8 +95,8 @@
 		491F03381E1CE0590050E933 /* douyu */ = {
 			isa = PBXGroup;
 			children = (
+				491F03671E1E43CA0050E933 /* Classes */,
 				491F03391E1CE0590050E933 /* AppDelegate.swift */,
-				491F033B1E1CE0590050E933 /* ViewController.swift */,
 				491F033D1E1CE0590050E933 /* Main.storyboard */,
 				491F03401E1CE0590050E933 /* Assets.xcassets */,
 				491F03421E1CE0590050E933 /* LaunchScreen.storyboard */,
@@ -123,6 +121,61 @@
 				491F035B1E1CE0590050E933 /* Info.plist */,
 			);
 			path = douyuUITests;
+			sourceTree = "<group>";
+		};
+		491F03671E1E43CA0050E933 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				491F03681E1E43CA0050E933 /* Follow */,
+				491F03691E1E43CA0050E933 /* Home */,
+				491F036A1E1E43CA0050E933 /* Live */,
+				491F036B1E1E43CA0050E933 /* Main */,
+				491F036C1E1E43CA0050E933 /* Profile */,
+				491F036D1E1E43CA0050E933 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		491F03681E1E43CA0050E933 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		491F03691E1E43CA0050E933 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		491F036A1E1E43CA0050E933 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		491F036B1E1E43CA0050E933 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		491F036C1E1E43CA0050E933 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		491F036D1E1E43CA0050E933 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +312,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				491F033C1E1CE0590050E933 /* ViewController.swift in Sources */,
 				491F033A1E1CE0590050E933 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,7 +462,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = douyu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hg.douyu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,7 +476,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = douyu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hg.douyu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -503,6 +559,7 @@
 				491F03601E1CE0590050E933 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		491F03611E1CE0590050E933 /* Build configuration list for PBXNativeTarget "douyuTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +568,7 @@
 				491F03631E1CE0590050E933 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		491F03641E1CE0590050E933 /* Build configuration list for PBXNativeTarget "douyuUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +577,7 @@
 				491F03661E1CE0590050E933 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
