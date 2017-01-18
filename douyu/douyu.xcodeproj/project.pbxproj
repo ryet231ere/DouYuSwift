@@ -13,6 +13,11 @@
 		491F03441E1CE0590050E933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491F03421E1CE0590050E933 /* LaunchScreen.storyboard */; };
 		491F034F1E1CE0590050E933 /* douyuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F034E1E1CE0590050E933 /* douyuTests.swift */; };
 		491F035A1E1CE0590050E933 /* douyuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F03591E1CE0590050E933 /* douyuUITests.swift */; };
+		496B900B1E2F5DC3005C3A2E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496B90091E2F5DC3005C3A2E /* Home.storyboard */; };
+		496B900E1E2F5DF5005C3A2E /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496B900C1E2F5DF5005C3A2E /* Follow.storyboard */; };
+		496B90111E2F5E0D005C3A2E /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496B900F1E2F5E0D005C3A2E /* Live.storyboard */; };
+		496B90141E2F5E25005C3A2E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496B90121E2F5E25005C3A2E /* Profile.storyboard */; };
+		496B90161E2F609B005C3A2E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496B90151E2F609B005C3A2E /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		491F03551E1CE0590050E933 /* douyuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = douyuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		491F03591E1CE0590050E933 /* douyuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = douyuUITests.swift; sourceTree = "<group>"; };
 		491F035B1E1CE0590050E933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		496B900A1E2F5DC3005C3A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = douyu/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
+		496B900D1E2F5DF5005C3A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = douyu/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
+		496B90101E2F5E0D005C3A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = douyu/Base.lproj/Live.storyboard; sourceTree = SOURCE_ROOT; };
+		496B90131E2F5E25005C3A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = douyu/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
+		496B90151E2F609B005C3A2E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +107,6 @@
 			children = (
 				491F03671E1E43CA0050E933 /* Classes */,
 				491F03391E1CE0590050E933 /* AppDelegate.swift */,
-				491F033D1E1CE0590050E933 /* Main.storyboard */,
 				491F03401E1CE0590050E933 /* Assets.xcassets */,
 				491F03421E1CE0590050E933 /* LaunchScreen.storyboard */,
 				491F03451E1CE0590050E933 /* Info.plist */,
@@ -139,6 +148,7 @@
 		491F03681E1E43CA0050E933 /* Follow */ = {
 			isa = PBXGroup;
 			children = (
+				496B900C1E2F5DF5005C3A2E /* Follow.storyboard */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -146,6 +156,7 @@
 		491F03691E1E43CA0050E933 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				496B90091E2F5DC3005C3A2E /* Home.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -153,6 +164,7 @@
 		491F036A1E1E43CA0050E933 /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				496B900F1E2F5E0D005C3A2E /* Live.storyboard */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -160,6 +172,8 @@
 		491F036B1E1E43CA0050E933 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				491F033D1E1CE0590050E933 /* Main.storyboard */,
+				496B90151E2F609B005C3A2E /* MainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -167,6 +181,7 @@
 		491F036C1E1E43CA0050E933 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				496B90121E2F5E25005C3A2E /* Profile.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -285,9 +300,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496B900E1E2F5DF5005C3A2E /* Follow.storyboard in Resources */,
 				491F03441E1CE0590050E933 /* LaunchScreen.storyboard in Resources */,
+				496B90111E2F5E0D005C3A2E /* Live.storyboard in Resources */,
 				491F03411E1CE0590050E933 /* Assets.xcassets in Resources */,
 				491F033F1E1CE0590050E933 /* Main.storyboard in Resources */,
+				496B90141E2F5E25005C3A2E /* Profile.storyboard in Resources */,
+				496B900B1E2F5DC3005C3A2E /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				491F033A1E1CE0590050E933 /* AppDelegate.swift in Sources */,
+				496B90161E2F609B005C3A2E /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +374,7 @@
 				491F033E1E1CE0590050E933 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		491F03421E1CE0590050E933 /* LaunchScreen.storyboard */ = {
@@ -362,6 +383,42 @@
 				491F03431E1CE0590050E933 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		496B90091E2F5DC3005C3A2E /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				496B900A1E2F5DC3005C3A2E /* Base */,
+			);
+			name = Home.storyboard;
+			path = ../Main;
+			sourceTree = "<group>";
+		};
+		496B900C1E2F5DF5005C3A2E /* Follow.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				496B900D1E2F5DF5005C3A2E /* Base */,
+			);
+			name = Follow.storyboard;
+			path = ../Main;
+			sourceTree = "<group>";
+		};
+		496B900F1E2F5E0D005C3A2E /* Live.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				496B90101E2F5E0D005C3A2E /* Base */,
+			);
+			name = Live.storyboard;
+			path = ../Main;
+			sourceTree = "<group>";
+		};
+		496B90121E2F5E25005C3A2E /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				496B90131E2F5E25005C3A2E /* Base */,
+			);
+			name = Profile.storyboard;
+			path = ../Main;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -464,7 +521,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = douyu/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hg.douyu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -478,7 +535,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = douyu/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hg.douyu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
