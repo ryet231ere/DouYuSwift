@@ -22,6 +22,8 @@
 		496B90231E2F6C64005C3A2E /* UIBaruttonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496B90221E2F6C64005C3A2E /* UIBaruttonItem+Extension.swift */; };
 		498E15DD1E48593B0068CC60 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498E15DC1E48593B0068CC60 /* PageTitleView.swift */; };
 		498E15DF1E485E7C0068CC60 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498E15DE1E485E7C0068CC60 /* Common.swift */; };
+		498E15E11E486E4D0068CC60 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498E15E01E486E4D0068CC60 /* PageContentView.swift */; };
+		498E15E31E4870390068CC60 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498E15E21E4870390068CC60 /* UIColor-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		496B90221E2F6C64005C3A2E /* UIBaruttonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBaruttonItem+Extension.swift"; sourceTree = "<group>"; };
 		498E15DC1E48593B0068CC60 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		498E15DE1E485E7C0068CC60 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		498E15E01E486E4D0068CC60 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		498E15E21E4870390068CC60 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				498E15DC1E48593B0068CC60 /* PageTitleView.swift */,
+				498E15E01E486E4D0068CC60 /* PageContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				496B90221E2F6C64005C3A2E /* UIBaruttonItem+Extension.swift */,
+				498E15E21E4870390068CC60 /* UIColor-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -400,8 +406,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				491F033A1E1CE0590050E933 /* AppDelegate.swift in Sources */,
+				498E15E31E4870390068CC60 /* UIColor-Extension.swift in Sources */,
 				496B90231E2F6C64005C3A2E /* UIBaruttonItem+Extension.swift in Sources */,
 				498E15DD1E48593B0068CC60 /* PageTitleView.swift in Sources */,
+				498E15E11E486E4D0068CC60 /* PageContentView.swift in Sources */,
 				496B901B1E2F6782005C3A2E /* MainViewController.swift in Sources */,
 				498E15DF1E485E7C0068CC60 /* Common.swift in Sources */,
 				496B90201E2F67C4005C3A2E /* HomeViewController.swift in Sources */,
