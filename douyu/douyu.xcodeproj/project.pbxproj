@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4911D8211E4AF25B0051A000 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4911D8201E4AF25B0051A000 /* RecommendViewController.swift */; };
 		4911D8241E4B01100051A000 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4911D8221E4B01100051A000 /* CollectionHeaderView.swift */; };
 		4911D8251E4B01100051A000 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4911D8231E4B01100051A000 /* CollectionHeaderView.xib */; };
 		4911D8281E4B05930051A000 /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4911D8261E4B05920051A000 /* CollectionNormalCell.swift */; };
 		4911D8291E4B05930051A000 /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4911D8271E4B05920051A000 /* CollectionNormalCell.xib */; };
+		4911D8301E4B1F2D0051A000 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4911D82E1E4B1F2D0051A000 /* CollectionPrettyCell.swift */; };
+		4911D8311E4B1F2D0051A000 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4911D82F1E4B1F2D0051A000 /* CollectionPrettyCell.xib */; };
+		4911D8331E4B1F750051A000 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4911D8321E4B1F750051A000 /* RecommendViewController.swift */; };
 		491F033A1E1CE0590050E933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F03391E1CE0590050E933 /* AppDelegate.swift */; };
 		491F033F1E1CE0590050E933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491F033D1E1CE0590050E933 /* Main.storyboard */; };
 		491F03411E1CE0590050E933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491F03401E1CE0590050E933 /* Assets.xcassets */; };
@@ -49,11 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4911D8201E4AF25B0051A000 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		4911D8221E4B01100051A000 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
 		4911D8231E4B01100051A000 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 		4911D8261E4B05920051A000 /* CollectionNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionNormalCell.swift; sourceTree = "<group>"; };
 		4911D8271E4B05920051A000 /* CollectionNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
+		4911D82E1E4B1F2D0051A000 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
+		4911D82F1E4B1F2D0051A000 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
+		4911D8321E4B1F750051A000 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		491F03361E1CE0580050E933 /* douyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		491F03391E1CE0590050E933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		491F033E1E1CE0590050E933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -243,6 +247,8 @@
 				498E15E01E486E4D0068CC60 /* PageContentView.swift */,
 				4911D8261E4B05920051A000 /* CollectionNormalCell.swift */,
 				4911D8271E4B05920051A000 /* CollectionNormalCell.xib */,
+				4911D82E1E4B1F2D0051A000 /* CollectionPrettyCell.swift */,
+				4911D82F1E4B1F2D0051A000 /* CollectionPrettyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -252,7 +258,7 @@
 			children = (
 				496B90091E2F5DC3005C3A2E /* Home.storyboard */,
 				496B901F1E2F67C4005C3A2E /* HomeViewController.swift */,
-				4911D8201E4AF25B0051A000 /* RecommendViewController.swift */,
+				4911D8321E4B1F750051A000 /* RecommendViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -396,6 +402,7 @@
 				496B90111E2F5E0D005C3A2E /* Live.storyboard in Resources */,
 				491F03411E1CE0590050E933 /* Assets.xcassets in Resources */,
 				491F033F1E1CE0590050E933 /* Main.storyboard in Resources */,
+				4911D8311E4B1F2D0051A000 /* CollectionPrettyCell.xib in Resources */,
 				496B90141E2F5E25005C3A2E /* Profile.storyboard in Resources */,
 				496B900B1E2F5DC3005C3A2E /* Home.storyboard in Resources */,
 			);
@@ -425,12 +432,13 @@
 				491F033A1E1CE0590050E933 /* AppDelegate.swift in Sources */,
 				4911D8241E4B01100051A000 /* CollectionHeaderView.swift in Sources */,
 				498E15E31E4870390068CC60 /* UIColor-Extension.swift in Sources */,
-				4911D8211E4AF25B0051A000 /* RecommendViewController.swift in Sources */,
 				496B90231E2F6C64005C3A2E /* UIBaruttonItem+Extension.swift in Sources */,
 				498E15DD1E48593B0068CC60 /* PageTitleView.swift in Sources */,
+				4911D8331E4B1F750051A000 /* RecommendViewController.swift in Sources */,
 				498E15E11E486E4D0068CC60 /* PageContentView.swift in Sources */,
 				496B901B1E2F6782005C3A2E /* MainViewController.swift in Sources */,
 				498E15DF1E485E7C0068CC60 /* Common.swift in Sources */,
+				4911D8301E4B1F2D0051A000 /* CollectionPrettyCell.swift in Sources */,
 				4911D8281E4B05930051A000 /* CollectionNormalCell.swift in Sources */,
 				496B90201E2F67C4005C3A2E /* HomeViewController.swift in Sources */,
 			);
