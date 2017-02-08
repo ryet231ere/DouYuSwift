@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionNormalCell" customModule="douyu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="218" height="106"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="218" height="106"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_live_cate_normal" translatesAutoresizingMaskIntoConstraints="NO" id="Bl2-Lt-59A">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="Ea3-r2-5dk"/>
+                            <constraint firstAttribute="width" constant="14" id="v2B-HT-jsB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="呼啦啦啦啦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEl-jy-LuX">
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="FPW-ea-9jh">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="呼啦啦啦啦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ks-ab-thr">
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvz-zW-B2g">
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="啦啦啦" image="Image_online"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="pvz-zW-B2g" firstAttribute="bottom" secondItem="FPW-ea-9jh" secondAttribute="bottom" constant="-5" id="983-SI-fU5"/>
+                <constraint firstItem="3Ks-ab-thr" firstAttribute="bottom" secondItem="FPW-ea-9jh" secondAttribute="bottom" constant="-5" id="9Yq-xe-S0O"/>
+                <constraint firstItem="Bl2-Lt-59A" firstAttribute="top" secondItem="FPW-ea-9jh" secondAttribute="bottom" constant="5" id="CIp-MZ-2kC"/>
+                <constraint firstItem="rEl-jy-LuX" firstAttribute="leading" secondItem="Bl2-Lt-59A" secondAttribute="trailing" constant="5" id="EC1-t3-Fe9"/>
+                <constraint firstItem="Bl2-Lt-59A" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Kiq-Mf-Iij"/>
+                <constraint firstItem="pvz-zW-B2g" firstAttribute="trailing" secondItem="FPW-ea-9jh" secondAttribute="trailing" constant="-5" id="PlJ-mn-6cd"/>
+                <constraint firstAttribute="bottom" secondItem="Bl2-Lt-59A" secondAttribute="bottom" constant="10" id="Q2h-aZ-KHw"/>
+                <constraint firstItem="FPW-ea-9jh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WrN-dT-5ag"/>
+                <constraint firstItem="rEl-jy-LuX" firstAttribute="centerY" secondItem="Bl2-Lt-59A" secondAttribute="centerY" id="fbQ-cT-l5U"/>
+                <constraint firstItem="3Ks-ab-thr" firstAttribute="leading" secondItem="FPW-ea-9jh" secondAttribute="leading" constant="5" id="lgh-Pg-ayl"/>
+                <constraint firstAttribute="trailing" secondItem="rEl-jy-LuX" secondAttribute="trailing" constant="5" id="r0p-Gy-LzY"/>
+                <constraint firstItem="FPW-ea-9jh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="u5Y-he-1jn"/>
+                <constraint firstAttribute="trailing" secondItem="FPW-ea-9jh" secondAttribute="trailing" id="wEP-bv-49W"/>
+            </constraints>
+            <size key="customSize" width="218" height="106"/>
+            <point key="canvasLocation" x="-21" y="12"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Image_online" width="16" height="16"/>
+        <image name="Img_default" width="172" height="103"/>
+        <image name="home_live_cate_normal" width="14" height="14"/>
+    </resources>
+</document>
