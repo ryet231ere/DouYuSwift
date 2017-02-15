@@ -20,6 +20,8 @@
 		491F03441E1CE0590050E933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491F03421E1CE0590050E933 /* LaunchScreen.storyboard */; };
 		491F034F1E1CE0590050E933 /* douyuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F034E1E1CE0590050E933 /* douyuTests.swift */; };
 		491F035A1E1CE0590050E933 /* douyuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F03591E1CE0590050E933 /* douyuUITests.swift */; };
+		495B2B1E1E5306E700F9CCBE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495B2B1D1E5306E700F9CCBE /* Alamofire.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		495B2B221E53089600F9CCBE /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495B2B211E53089600F9CCBE /* NetworkTools.swift */; };
 		496B900B1E2F5DC3005C3A2E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496B90091E2F5DC3005C3A2E /* Home.storyboard */; };
 		496B900E1E2F5DF5005C3A2E /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496B900C1E2F5DF5005C3A2E /* Follow.storyboard */; };
 		496B90111E2F5E0D005C3A2E /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496B900F1E2F5E0D005C3A2E /* Live.storyboard */; };
@@ -31,6 +33,7 @@
 		498E15DF1E485E7C0068CC60 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498E15DE1E485E7C0068CC60 /* Common.swift */; };
 		498E15E11E486E4D0068CC60 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498E15E01E486E4D0068CC60 /* PageContentView.swift */; };
 		498E15E31E4870390068CC60 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498E15E21E4870390068CC60 /* UIColor-Extension.swift */; };
+		9989014A11A5698AFC60CF3F /* Pods_douyu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A2D0ACA2775A7EDE26A194 /* Pods_douyu.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,8 @@
 		491F03551E1CE0590050E933 /* douyuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = douyuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		491F03591E1CE0590050E933 /* douyuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = douyuUITests.swift; sourceTree = "<group>"; };
 		491F035B1E1CE0590050E933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		495B2B1D1E5306E700F9CCBE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/douyu-glkcmespugcdpydqxzgtkbckykdw/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		495B2B211E53089600F9CCBE /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		496B900A1E2F5DC3005C3A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = douyu/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
 		496B900D1E2F5DF5005C3A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = douyu/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
 		496B90101E2F5E0D005C3A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = douyu/Base.lproj/Live.storyboard; sourceTree = SOURCE_ROOT; };
@@ -81,6 +86,9 @@
 		498E15DE1E485E7C0068CC60 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		498E15E01E486E4D0068CC60 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		498E15E21E4870390068CC60 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		80C2B5652A1334B3407E5C5F /* Pods-douyu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyu.release.xcconfig"; path = "Pods/Target Support Files/Pods-douyu/Pods-douyu.release.xcconfig"; sourceTree = "<group>"; };
+		ADAE447DE160252CC4A7D914 /* Pods-douyu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-douyu/Pods-douyu.debug.xcconfig"; sourceTree = "<group>"; };
+		C4A2D0ACA2775A7EDE26A194 /* Pods_douyu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_douyu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495B2B1E1E5306E700F9CCBE /* Alamofire.framework in Frameworks */,
+				9989014A11A5698AFC60CF3F /* Pods_douyu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +118,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25AD0A5DD50B65CC398BFA03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				495B2B1D1E5306E700F9CCBE /* Alamofire.framework */,
+				C4A2D0ACA2775A7EDE26A194 /* Pods_douyu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		491F032D1E1CE0580050E933 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +134,8 @@
 				491F034D1E1CE0590050E933 /* douyuTests */,
 				491F03581E1CE0590050E933 /* douyuUITests */,
 				491F03371E1CE0590050E933 /* Products */,
+				F69AA7C3E78384F927F6CDD3 /* Pods */,
+				25AD0A5DD50B65CC398BFA03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,6 +241,7 @@
 			children = (
 				496B90211E2F6C41005C3A2E /* Extension */,
 				498E15DE1E485E7C0068CC60 /* Common.swift */,
+				495B2B211E53089600F9CCBE /* NetworkTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -288,6 +310,15 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		F69AA7C3E78384F927F6CDD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADAE447DE160252CC4A7D914 /* Pods-douyu.debug.xcconfig */,
+				80C2B5652A1334B3407E5C5F /* Pods-douyu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -295,9 +326,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 491F035E1E1CE0590050E933 /* Build configuration list for PBXNativeTarget "douyu" */;
 			buildPhases = (
+				04132983E59DF4E38336647B /* [CP] Check Pods Manifest.lock */,
 				491F03321E1CE0580050E933 /* Sources */,
 				491F03331E1CE0580050E933 /* Frameworks */,
 				491F03341E1CE0580050E933 /* Resources */,
+				5B78E81659FD678F735D2944 /* [CP] Embed Pods Frameworks */,
+				70E513C0E2CE481FD6BB0481 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -424,6 +458,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04132983E59DF4E38336647B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5B78E81659FD678F735D2944 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-douyu/Pods-douyu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70E513C0E2CE481FD6BB0481 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-douyu/Pods-douyu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		491F03321E1CE0580050E933 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -440,6 +522,7 @@
 				498E15DF1E485E7C0068CC60 /* Common.swift in Sources */,
 				4911D8301E4B1F2D0051A000 /* CollectionPrettyCell.swift in Sources */,
 				4911D8281E4B05930051A000 /* CollectionNormalCell.swift in Sources */,
+				495B2B221E53089600F9CCBE /* NetworkTools.swift in Sources */,
 				496B90201E2F67C4005C3A2E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -625,11 +708,12 @@
 		};
 		491F035F1E1CE0590050E933 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADAE447DE160252CC4A7D914 /* Pods-douyu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = douyu/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hg.douyu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -639,11 +723,12 @@
 		};
 		491F03601E1CE0590050E933 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80C2B5652A1334B3407E5C5F /* Pods-douyu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = douyu/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hg.douyu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
