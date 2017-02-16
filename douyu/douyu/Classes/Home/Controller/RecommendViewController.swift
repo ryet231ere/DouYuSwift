@@ -14,6 +14,8 @@ private let kNormalItemH = kItemW * 3 / 4
 private let kPrettyItemH = kItemW * 4 / 3
 private let kHeaderViewH : CGFloat = 50
 
+private let kCycleViewH = kScreenW * 3 / 8
+
 private let kNormalCellID = "kNormalCellID"
 private let kPrettyCellID = "kPrettyCellID"
 private let kHeaderViewID = "kHeaderViewID"
@@ -23,6 +25,7 @@ class RecommendViewController: UIViewController {
     // MARK: - 懒加载属性
     fileprivate lazy var recommendVM : RecommendViewModel = RecommendViewModel()
     fileprivate lazy var collectionView : UICollectionView = {[unowned self] in
+        
         // 1.创建布局
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: kItemW, height: kNormalItemH)
@@ -44,7 +47,11 @@ class RecommendViewController: UIViewController {
         
         return collectionView
     }()
-    
+    fileprivate lazy var cycleView : RecommendCycleView = {
+        let cycleView = RecommendCycleView.recommendCycleView()
+        cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: kScreenW, height: kCycleViewH)
+        return cycleView
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -60,11 +67,17 @@ class RecommendViewController: UIViewController {
 extension RecommendViewController {
     fileprivate func loadData() {
     
+        // 1.请求推荐数据
         recommendVM.requestData { 
             self.collectionView.reloadData()
         }
+        
+        // 2.请求轮播数据
+        recommendVM.requestCycleData { 
+            self.cycleView.cycleModels = self.recommendVM.cycleModels
+        }
     }
-}
+} 
 
 
 // MARK:- 设置UI界面内容
@@ -72,6 +85,12 @@ extension RecommendViewController {
     fileprivate func setupUI() {
         // 1.将uicollectionview添加到控制器的view中
         view.addSubview(collectionView)
+        
+        // 2.将cycleView添加到collectionView
+        collectionView.addSubview(cycleView)
+        
+        // 3.设置collectionView的内边距
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH, left: 0, bottom: 0, right: 0)
     }
 }
 
