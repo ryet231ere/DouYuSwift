@@ -16,6 +16,8 @@
 		4909B8511E5583D800A3BF93 /* CollectionBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4909B8501E5583D800A3BF93 /* CollectionBaseCell.swift */; };
 		4909B8531E558CD100A3BF93 /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4909B8521E558CD100A3BF93 /* RecommendCycleView.swift */; };
 		4909B8551E558CFA00A3BF93 /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4909B8541E558CFA00A3BF93 /* RecommendCycleView.xib */; };
+		490D875F1E569F1B004B34D2 /* RecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D875E1E569F1B004B34D2 /* RecommendGameView.swift */; };
+		490D87611E569F2B004B34D2 /* RecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 490D87601E569F2B004B34D2 /* RecommendGameView.xib */; };
 		4911D8241E4B01100051A000 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4911D8221E4B01100051A000 /* CollectionHeaderView.swift */; };
 		4911D8251E4B01100051A000 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4911D8231E4B01100051A000 /* CollectionHeaderView.xib */; };
 		4911D8281E4B05930051A000 /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4911D8261E4B05920051A000 /* CollectionNormalCell.swift */; };
@@ -87,6 +89,8 @@
 		4909B8501E5583D800A3BF93 /* CollectionBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionBaseCell.swift; sourceTree = "<group>"; };
 		4909B8521E558CD100A3BF93 /* RecommendCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
 		4909B8541E558CFA00A3BF93 /* RecommendCycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
+		490D875E1E569F1B004B34D2 /* RecommendGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendGameView.swift; sourceTree = "<group>"; };
+		490D87601E569F2B004B34D2 /* RecommendGameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendGameView.xib; sourceTree = "<group>"; };
 		4911D8221E4B01100051A000 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
 		4911D8231E4B01100051A000 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 		4911D8261E4B05920051A000 /* CollectionNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionNormalCell.swift; sourceTree = "<group>"; };
@@ -351,6 +355,8 @@
 				4909B8541E558CFA00A3BF93 /* RecommendCycleView.xib */,
 				494DCCFA1E55A4BE00EB9A7F /* CollectionCycleCell.swift */,
 				494DCCFB1E55A4BE00EB9A7F /* CollectionCycleCell.xib */,
+				490D875E1E569F1B004B34D2 /* RecommendGameView.swift */,
+				490D87601E569F2B004B34D2 /* RecommendGameView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -496,6 +502,7 @@
 				494DCCFD1E55A4BE00EB9A7F /* CollectionCycleCell.xib in Resources */,
 				4911D8311E4B1F2D0051A000 /* CollectionPrettyCell.xib in Resources */,
 				496B90141E2F5E25005C3A2E /* Profile.storyboard in Resources */,
+				490D87611E569F2B004B34D2 /* RecommendGameView.xib in Resources */,
 				496B900B1E2F5DC3005C3A2E /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,6 +589,7 @@
 				4911D8331E4B1F750051A000 /* RecommendViewController.swift in Sources */,
 				498E15E11E486E4D0068CC60 /* PageContentView.swift in Sources */,
 				496B901B1E2F6782005C3A2E /* MainViewController.swift in Sources */,
+				490D875F1E569F1B004B34D2 /* RecommendGameView.swift in Sources */,
 				498E15DF1E485E7C0068CC60 /* Common.swift in Sources */,
 				4911D8301E4B1F2D0051A000 /* CollectionPrettyCell.swift in Sources */,
 				4909B8511E5583D800A3BF93 /* CollectionBaseCell.swift in Sources */,
