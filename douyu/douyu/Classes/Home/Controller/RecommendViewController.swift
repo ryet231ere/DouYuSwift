@@ -76,8 +76,11 @@ extension RecommendViewController {
     fileprivate func loadData() {
     
         // 1.请求推荐数据
-        recommendVM.requestData { 
+        recommendVM.requestData {
+            // 1.展示推荐数据
             self.collectionView.reloadData()
+            
+            self.ganemView.groups = self.recommendVM.anchorGroups
         }
         
         // 2.请求轮播数据

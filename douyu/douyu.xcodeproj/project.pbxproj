@@ -31,6 +31,8 @@
 		491F03441E1CE0590050E933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491F03421E1CE0590050E933 /* LaunchScreen.storyboard */; };
 		491F034F1E1CE0590050E933 /* douyuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F034E1E1CE0590050E933 /* douyuTests.swift */; };
 		491F035A1E1CE0590050E933 /* douyuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F03591E1CE0590050E933 /* douyuUITests.swift */; };
+		492D5BB21E64013100E54025 /* CollectionGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D5BB01E64013100E54025 /* CollectionGameCell.swift */; };
+		492D5BB31E64013100E54025 /* CollectionGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 492D5BB11E64013100E54025 /* CollectionGameCell.xib */; };
 		494DCCF91E559FC500EB9A7F /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494DCCF81E559FC500EB9A7F /* CycleModel.swift */; };
 		494DCCFC1E55A4BE00EB9A7F /* CollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494DCCFA1E55A4BE00EB9A7F /* CollectionCycleCell.swift */; };
 		494DCCFD1E55A4BE00EB9A7F /* CollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 494DCCFB1E55A4BE00EB9A7F /* CollectionCycleCell.xib */; };
@@ -110,6 +112,8 @@
 		491F03551E1CE0590050E933 /* douyuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = douyuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		491F03591E1CE0590050E933 /* douyuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = douyuUITests.swift; sourceTree = "<group>"; };
 		491F035B1E1CE0590050E933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492D5BB01E64013100E54025 /* CollectionGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionGameCell.swift; sourceTree = "<group>"; };
+		492D5BB11E64013100E54025 /* CollectionGameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionGameCell.xib; sourceTree = "<group>"; };
 		494DCCF81E559FC500EB9A7F /* CycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
 		494DCCFA1E55A4BE00EB9A7F /* CollectionCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCycleCell.swift; sourceTree = "<group>"; };
 		494DCCFB1E55A4BE00EB9A7F /* CollectionCycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCycleCell.xib; sourceTree = "<group>"; };
@@ -357,6 +361,8 @@
 				494DCCFB1E55A4BE00EB9A7F /* CollectionCycleCell.xib */,
 				490D875E1E569F1B004B34D2 /* RecommendGameView.swift */,
 				490D87601E569F2B004B34D2 /* RecommendGameView.xib */,
+				492D5BB01E64013100E54025 /* CollectionGameCell.swift */,
+				492D5BB11E64013100E54025 /* CollectionGameCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -498,6 +504,7 @@
 				496B90111E2F5E0D005C3A2E /* Live.storyboard in Resources */,
 				491F03411E1CE0590050E933 /* Assets.xcassets in Resources */,
 				491F033F1E1CE0590050E933 /* Main.storyboard in Resources */,
+				492D5BB31E64013100E54025 /* CollectionGameCell.xib in Resources */,
 				4909B8551E558CFA00A3BF93 /* RecommendCycleView.xib in Resources */,
 				494DCCFD1E55A4BE00EB9A7F /* CollectionCycleCell.xib in Resources */,
 				4911D8311E4B1F2D0051A000 /* CollectionPrettyCell.xib in Resources */,
@@ -594,6 +601,7 @@
 				4911D8301E4B1F2D0051A000 /* CollectionPrettyCell.swift in Sources */,
 				4909B8511E5583D800A3BF93 /* CollectionBaseCell.swift in Sources */,
 				49068B7E1E544A7B00DD6368 /* NSDate-Extension.swift in Sources */,
+				492D5BB21E64013100E54025 /* CollectionGameCell.swift in Sources */,
 				4911D8281E4B05930051A000 /* CollectionNormalCell.swift in Sources */,
 				495B2B221E53089600F9CCBE /* NetworkTools.swift in Sources */,
 				496B90201E2F67C4005C3A2E /* HomeViewController.swift in Sources */,
