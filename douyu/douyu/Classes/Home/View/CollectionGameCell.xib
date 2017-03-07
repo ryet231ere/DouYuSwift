@@ -5,13 +5,12 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionGameCell" customModule="douyu" customModuleProvider="target">
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionGameCell" customModule="douyu" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -20,9 +19,6 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英雄联盟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hl4-zQ-0HL">
                         <rect key="frame" x="15" y="65" width="50" height="15"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="15" id="5AN-Rs-6by"/>
-                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <nil key="highlightedColor"/>
@@ -30,7 +26,8 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Mh-HK-wB5">
                         <rect key="frame" x="18" y="15" width="45" height="45"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="6Mh-HK-wB5" secondAttribute="height" multiplier="1:1" id="ifK-hy-pha"/>
+                            <constraint firstAttribute="width" constant="45" id="W9b-41-9Uk"/>
+                            <constraint firstAttribute="height" constant="45" id="c8B-vS-hiL"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -39,14 +36,24 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
+                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="79Z-1v-FWz">
+                        <rect key="frame" x="0.0" y="90" width="80" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="8EQ-E9-4mY"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="hl4-zQ-0HL" secondAttribute="bottom" constant="10" id="2S4-ea-NuT"/>
-                <constraint firstItem="6Mh-HK-wB5" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="3QG-ym-8eQ"/>
-                <constraint firstItem="hl4-zQ-0HL" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Atv-BZ-HOh"/>
-                <constraint firstItem="6Mh-HK-wB5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="GCN-Jw-iJe"/>
-                <constraint firstItem="hl4-zQ-0HL" firstAttribute="top" secondItem="6Mh-HK-wB5" secondAttribute="bottom" constant="5" id="Jhl-SQ-Fc1"/>
+                <constraint firstItem="hl4-zQ-0HL" firstAttribute="centerX" secondItem="6Mh-HK-wB5" secondAttribute="centerX" id="0tx-1y-D09"/>
+                <constraint firstItem="79Z-1v-FWz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XQV-Rp-hDt"/>
+                <constraint firstItem="hl4-zQ-0HL" firstAttribute="top" secondItem="6Mh-HK-wB5" secondAttribute="bottom" constant="5" id="cDa-3e-Zbz"/>
+                <constraint firstItem="6Mh-HK-wB5" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="cJA-Hc-gBj"/>
+                <constraint firstItem="6Mh-HK-wB5" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-8" id="des-eV-mfW"/>
+                <constraint firstItem="6Mh-HK-wB5" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="g72-ox-sNz"/>
+                <constraint firstAttribute="trailing" secondItem="79Z-1v-FWz" secondAttribute="trailing" id="m4N-WR-1yP"/>
+                <constraint firstAttribute="bottom" secondItem="79Z-1v-FWz" secondAttribute="bottom" constant="-1" id="mcQ-Tv-G5m"/>
             </constraints>
             <connections>
                 <outlet property="iconImageview" destination="6Mh-HK-wB5" id="pbj-Ku-p3b"/>

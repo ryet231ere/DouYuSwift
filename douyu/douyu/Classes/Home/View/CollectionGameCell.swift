@@ -18,10 +18,10 @@ class CollectionGameCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     
     // 定义模型属性
-    var group : AnchorGroup? {
+    var baseModel : BassGameModel? {
         didSet{
-            titleLabel.text = group?.tag_name
-            if let iconUrl = URL(string: group?.icon_url ?? "") {
+            titleLabel.text = baseModel?.tag_name
+            if let iconUrl = URL(string: baseModel?.icon_url ?? "") {
                 iconImageview.kf.setImage(with: iconUrl)
             } else {
                 iconImageview.image = UIImage(named: "home_more_btn")
