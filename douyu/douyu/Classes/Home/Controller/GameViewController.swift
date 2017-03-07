@@ -12,6 +12,7 @@ private let kEdgeMargin : CGFloat = 10
 private let kItemW : CGFloat = (kScreenW - 2 * kEdgeMargin) / 3
 private let kItemH : CGFloat = kItemW * 6 / 5
 private let kHeaderViewH : CGFloat = 50
+private let kGameViewH : CGFloat = 90
 
 private let kGameCellID = "kGameCellID"
 private let kHeaderViewID = "kHeaderViewID"
@@ -35,6 +36,19 @@ class GameViewController: UIViewController {
         collectionView.backgroundColor = UIColor.white
         return collectionView
     }()
+    fileprivate lazy var topHeaderView : CollectionHeaderView = {
+        let headerView = CollectionHeaderView.collectionHeaderView()
+        headerView.frame = CGRect(x: 0, y: -(kHeaderViewH + kGameViewH), width: kScreenW, height: kHeaderViewH)
+        headerView.iconImageView.image = UIImage(named: "Img_orange")
+        headerView.titleLabel.text = "常用"
+        headerView.moreBtn.isHidden = true
+        return headerView;
+    }()
+    fileprivate lazy var ganeView : RecommendGameView = {
+        let gameView = RecommendGameView.recommendGameView()
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+        return gameView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +65,17 @@ class GameViewController: UIViewController {
 extension GameViewController{
     fileprivate func setupUI() {
         view.addSubview(collectionView)
+        
+        // 添加顶部的headerview
+        collectionView.addSubview(topHeaderView)
+        
+        // 将常用游戏的view添加到collectionview中
+        collectionView.addSubview(ganeView)
+        
+        // 设置collectionview的内边距
+        collectionView.contentInset = UIEdgeInsets(top: kHeaderViewH + kGameViewH, left: 0, bottom: 0, right: 0)
+    
+        
     }
 }
 
@@ -59,6 +84,9 @@ extension GameViewController {
     fileprivate func loadData() {
         gameVM.loadAllGameData { 
             self.collectionView.reloadData()
+            
+            
+            self.ganeView.groups = Array(self.gameVM.games[0..<10])
         }
     }
 }

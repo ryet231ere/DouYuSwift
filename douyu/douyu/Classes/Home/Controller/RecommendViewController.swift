@@ -80,7 +80,15 @@ extension RecommendViewController {
             // 1.展示推荐数据
             self.collectionView.reloadData()
             
-            self.ganemView.groups = self.recommendVM.anchorGroups
+            var groups = self.recommendVM.anchorGroups
+            groups.removeFirst()
+            groups.removeFirst()
+            
+            let moreGroup = AnchorGroup()
+            moreGroup.tag_name = "更多"
+            groups.append(moreGroup)
+            
+            self.ganemView.groups = groups
         }
         
         // 2.请求轮播数据
