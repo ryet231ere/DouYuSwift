@@ -28,6 +28,8 @@
 		491E23EA1E6E9BFD00BE815B /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E23E91E6E9BFD00BE815B /* GameViewModel.swift */; };
 		491E23EC1E6E9D7600BE815B /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E23EB1E6E9D7600BE815B /* GameModel.swift */; };
 		491E23EE1E6E9EC100BE815B /* BassGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E23ED1E6E9EC100BE815B /* BassGameModel.swift */; };
+		491E23F01E6EB64000BE815B /* AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E23EF1E6EB64000BE815B /* AmuseViewController.swift */; };
+		491E23F21E6EB84A00BE815B /* AmuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E23F11E6EB84A00BE815B /* AmuseViewModel.swift */; };
 		491F033A1E1CE0590050E933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F03391E1CE0590050E933 /* AppDelegate.swift */; };
 		491F033F1E1CE0590050E933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491F033D1E1CE0590050E933 /* Main.storyboard */; };
 		491F03411E1CE0590050E933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491F03401E1CE0590050E933 /* Assets.xcassets */; };
@@ -107,6 +109,8 @@
 		491E23E91E6E9BFD00BE815B /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		491E23EB1E6E9D7600BE815B /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		491E23ED1E6E9EC100BE815B /* BassGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BassGameModel.swift; sourceTree = "<group>"; };
+		491E23EF1E6EB64000BE815B /* AmuseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseViewController.swift; sourceTree = "<group>"; };
+		491E23F11E6EB84A00BE815B /* AmuseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseViewModel.swift; sourceTree = "<group>"; };
 		491F03361E1CE0580050E933 /* douyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		491F03391E1CE0590050E933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		491F033E1E1CE0590050E933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 			children = (
 				49068B7B1E54401D00DD6368 /* RecommendViewModel.swift */,
 				491E23E91E6E9BFD00BE815B /* GameViewModel.swift */,
+				491E23F11E6EB84A00BE815B /* AmuseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -356,6 +361,7 @@
 				496B901F1E2F67C4005C3A2E /* HomeViewController.swift */,
 				4911D8321E4B1F750051A000 /* RecommendViewController.swift */,
 				490FB7E31E65748600C46181 /* GameViewController.swift */,
+				491E23EF1E6EB64000BE815B /* AmuseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -595,6 +601,7 @@
 			files = (
 				4909B8531E558CD100A3BF93 /* RecommendCycleView.swift in Sources */,
 				49068B821E5456CD00DD6368 /* ANchorModel.swift in Sources */,
+				491E23F21E6EB84A00BE815B /* AmuseViewModel.swift in Sources */,
 				491F033A1E1CE0590050E933 /* AppDelegate.swift in Sources */,
 				491E23EA1E6E9BFD00BE815B /* GameViewModel.swift in Sources */,
 				4911D8241E4B01100051A000 /* CollectionHeaderView.swift in Sources */,
@@ -607,6 +614,7 @@
 				491E23EC1E6E9D7600BE815B /* GameModel.swift in Sources */,
 				494DCCF91E559FC500EB9A7F /* CycleModel.swift in Sources */,
 				4911D8331E4B1F750051A000 /* RecommendViewController.swift in Sources */,
+				491E23F01E6EB64000BE815B /* AmuseViewController.swift in Sources */,
 				498E15E11E486E4D0068CC60 /* PageContentView.swift in Sources */,
 				496B901B1E2F6782005C3A2E /* MainViewController.swift in Sources */,
 				491E23EE1E6E9EC100BE815B /* BassGameModel.swift in Sources */,
