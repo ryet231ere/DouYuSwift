@@ -13,16 +13,28 @@ class BaseViewModel {
 }
 
 extension BaseViewModel {
-    func loadAnchorData(URLString : String, parameters : [String : Any]? = nil, finishedCallback : @escaping () -> ()) {
+    func loadAnchorData(isGroupData : Bool, URLString : String, parameters : [String : Any]? = nil, finishedCallback : @escaping () -> ()) {
         NetworkTools.requestData(.get, URLString: URLString, parameters: parameters) { (result) in
             // 1.获取数据
             guard let resultDict = result as? [String : Any] else { return }
             guard let dataArray = resultDict["data"] as? [[String : Any]] else { return }
             
-            // 2.字典转模型
-            for dict in dataArray {
-                self.anchorGroups.append(AnchorGroup(dict: dict))
+            if isGroupData {
+                // 2.字典转模型
+                for dict in dataArray {
+                    self.anchorGroups.append(AnchorGroup(dict: dict))
+                }
+            } else {
+                let group = AnchorGroup()
+                
+                for dict in dataArray {
+                    group.anchors.append(ANchorModel(dict: dict))
+                }
+                
+                self.anchorGroups.append(group)
             }
+            
+            
             
             finishedCallback()
         }

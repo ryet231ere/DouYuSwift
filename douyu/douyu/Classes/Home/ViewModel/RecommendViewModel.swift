@@ -80,7 +80,7 @@ extension RecommendViewModel {
         
         //5.请求2-12部分的游戏数据
         dGroup.enter()
-        loadAnchorData(URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) { 
+        loadAnchorData(isGroupData: true, URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) {
              dGroup.leave()
         }
 //        NetworkTools.requestData(.get, URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters ) { (result) in

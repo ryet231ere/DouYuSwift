@@ -19,7 +19,7 @@ let kNormalItemW = (kScreenW - 3 * kItemMargin) / 2
 let kNormalItemH = kNormalItemW * 3 / 4
 let kPrettyItemH = kNormalItemW * 4 / 3
 
-class BaseAnchorViewController: UIViewController {
+class BaseAnchorViewController: BassViewController {
 
     var baseVM : BaseViewModel!
     
@@ -57,8 +57,14 @@ class BaseAnchorViewController: UIViewController {
 }
 
 extension BaseAnchorViewController {
-    func setupUI() {
+    override func setupUI() {
+        contentView = collectionView
+        
         view.addSubview(collectionView)
+        
+        super.setupUI()
+        
+        
     }
 }
 
@@ -69,7 +75,7 @@ extension BaseAnchorViewController {
 }
 
 
-extension BaseAnchorViewController : UICollectionViewDelegate,UICollectionViewDataSource {
+extension BaseAnchorViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return baseVM.anchorGroups[section].anchors.count
     }
@@ -91,5 +97,29 @@ extension BaseAnchorViewController : UICollectionViewDelegate,UICollectionViewDa
     }
     
 }
+
+extension BaseAnchorViewController : UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let anchor = baseVM.anchorGroups[indexPath.section].anchors[indexPath.item]
+        
+        anchor.isVertical == 0 ? pushNormalRoomVC() : presentShowRoomVC()
+    }
+    
+    
+    private func presentShowRoomVC() {
+        let showRoomVc = RoomShowViewController()
+        
+        present(showRoomVc, animated: true, completion: nil)
+    }
+    
+    private func pushNormalRoomVC() {
+        let normalRoomVc = RoomNormalViewController()
+        
+        navigationController?.pushViewController(normalRoomVc, animated: true)
+    }
+    
+}
+
+
 
 

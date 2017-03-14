@@ -54,6 +54,8 @@ extension AmuseViewController {
             tempGroup.removeFirst()
             
             self.menuView.groups = tempGroup
+            
+            self.loadDataFinisher()
         }
     }
 }

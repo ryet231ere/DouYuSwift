@@ -50,6 +50,8 @@ extension RecommendViewController {
             groups.append(moreGroup)
             
             self.ganemView.groups = groups
+            
+            self.loadDataFinisher()
         }
         
         // 2.请求轮播数据
